@@ -31,3 +31,90 @@ In a task we are given 3 types of plants Puffs, Parabush and Deltatree. For thos
 
 # Application:
 Run the program and the program is asked for name of a file:
+
+![UML](images/1scr.png)
+
+In case of file with no plants the output will be:
+
+![UML](images/2scr.png)
+
+If the file contain elements then simulation will be started:
+
+![UML](images/3scr.png)
+
+By the end of a simulation names of survived plants are printed.
+
+![UML](images/4scr.png)
+
+## AS A USER I WANT TO simulate plants behavior
+- **GIVEN**:a file containing 4 plants and 10 days that we need to simulate  
+- **WHEN**: the simulation starts
+- **THEN**: all 10 days of simulation are printed and survivors are printed out correctlly
+
+## AS A USER I WANT TO simulate plants behavior
+- **GIVEN**: a file containing 0 plants and 10 days that we need to simulate
+- **WHEN**: the simulation starts
+- **THEN**: “file doesn’t contain anything” printed
+  
+## AS A USER I WANT TO simulate plants behavior with all plants started with 0 nutrients
+- **GIVEN**: a file containing 3 plants with 0 nutrients and 10 days that we need to simulate
+- **WHEN**: the simulation starts 
+- **THEN**: all 10 days of simulation are printed, no survivors left
+
+## AS A USER I WANT TO simulate plants for 1 day only
+- **GIVEN**: a file containing 4 plants and 1 day that we need to simulate
+- **WHEN**: the simulation starts
+- **THEN**: 1 day of simulation is printed, survivors printed
+
+## AS A USER I WANT TO simulate effect of alpha radiation on Deltatree
+- **GIVEN**: a file containing 1 plant strarting with 6 nutrients
+- **WHEN**: the simulation starts
+- **THEN**: the nutrients should be changed by the end of the simulation
+
+## AS A USER I WANT TO simulate effect of delta radiation on Deltatree
+- **GIVEN**: a file containing 1 plant strarting with 4 nutrients
+- **WHEN**: the simulation starts 
+- **THEN**: the nutrients should be changed by the end of the simulation
+
+## AS A USER I WANT TO simulate 150 days of radiation effect
+- **GIVEN**: a file containing 5 plants
+- **WHEN**: the simulation starts 
+- **THEN**: the 150 days of simulation are printed and survivors are printed
+
+## AS A USER I WANT TO simulate only Puffs
+- **GIVEN**: a file containing 5 Puffs
+- **WHEN**: the simulation starts
+- **THEN**: the simulation ends, nutrients change for all days are printed, all survivors are printed
+
+## AS A USER I WANT TO simulate only Deltatree
+- **GIVEN**: a file containing 3 Deltatree
+- **WHEN**: the simulation starts 
+- **THEN**: the simulation ends, nutrients change for all days are printed, all survivors are printed
+
+## AS A USER I WANT TO simulate mixed types of plants
+- **GIVEN**: a file containing Puffs, Deltatree, Parabush plants
+- **WHEN**: the simulation starts 
+- **THEN**: the simulation ends, nutrients change for all days are printed, all survivors are printed
+  
+## AS A USER I WANT TO simulate no radiation for several days
+- **GIVEN**: a file containing several plants
+- **WHEN**: the simulation starts 
+- **THEN**: the simulation ends, nutrients change for all days are printed, all survivors are printed
+
+  ## AS A USER I WANT TO simulate of death of one plant
+- **GIVEN**: a file containing 4 plants
+- **WHEN**: the simulation starts 
+- **THEN**: the simulation ends, 1 plant is dead and 3 still alive
+  
+  ## AS A USER I WANT TO simulate of death of plants on the same days
+- **GIVEN**: a file containing 4 plants
+- **WHEN**: the simulation starts 
+- **THEN**: the simulation ends all 4 plants are dead on the same day
+
+## AS A USER I WANT TO simulate survival of Parabush
+- **GIVEN**: a file containing Parabush with a big number of nutrients and 3 days to simulate
+- **WHEN**: the simulation starts 
+- **THEN**: the simulation ends and by the end of 3 days Parabush is still alive
+  
+ 
+
