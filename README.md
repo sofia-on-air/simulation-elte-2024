@@ -9,6 +9,8 @@ Simulate the behaviors of the plants, and print out the radiation of the day and
 Properties of the plants: name (string), nutrients (integer), living (boolean). The types of the plants in the simulation: puffs, deltatree, parabush.
 On a day of the the simulation the living plant first changes its nutrients, then if it is still alive, it can affect the radiation of the next day.
 
+![UML](images/table.png)
+
 Read the data of the simulation from a text file. The first line contains the number (n) of the plants. The following n lines contain the information about the plants: name, type, initial nutrient level. Type is represented by one character: p - Puffs, d - Deltratree, b - Parabush. The last line of the file defines the number of the days you have to simulate.
 The program should ask for the name of the file, and it has to print out the name of the survivors (we can assume that the file is existing and its format is valid).
 A possible file content: 4
@@ -20,6 +22,8 @@ Dumpy b 4 Willowy d 3 10
 In a task we are given 3 types of plants Puffs, Parabush and Deltatree. For those I created a class Plant and inherited 3 types of plants from it. In a parent class I created several abstract classes which were overridden for children classes. For radiation affect plants I created interface Radiation from what 3 types of radiation were inherited : Alpha, Delta and NoRadiation. To calculate what kind of radiation will affect plant for the next day I created a method that calculate it in a Simulation class. Class Database will be used for reading data from a file and storing them.
 
 # A class diagram:
+
+![UML](images/uml_sim.png)
 
 1) isAlive abstract method, which we override the condition for each type of plants to check if it still alive or not.(different type of plant have different condition for nutrients to be alive). Return boolean.
 2) Get_alpha_need is abstract method which we override to use it for deciding later what kind of radiation will affect plant for a next day.(using our table given in a task, because different type of plant have different condition). Return int.
