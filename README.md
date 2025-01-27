@@ -13,10 +13,6 @@ On a day of the the simulation the living plant first changes its nutrients, the
 
 Read the data of the simulation from a text file. The first line contains the number (n) of the plants. The following n lines contain the information about the plants: name, type, initial nutrient level. Type is represented by one character: p - Puffs, d - Deltratree, b - Parabush. The last line of the file defines the number of the days you have to simulate.
 The program should ask for the name of the file, and it has to print out the name of the survivors (we can assume that the file is existing and its format is valid).
-A possible file content: 4
-Piggy p 7
-Slender d 5
-Dumpy b 4 Willowy d 3 10
 
 # Analysis and Solution plan:
 In a task we are given 3 types of plants Puffs, Parabush and Deltatree. For those I created a class Plant and inherited 3 types of plants from it. In a parent class I created several abstract classes which were overridden for children classes. For radiation affect plants I created interface Radiation from what 3 types of radiation were inherited : Alpha, Delta and NoRadiation. To calculate what kind of radiation will affect plant for the next day I created a method that calculate it in a Simulation class. Class Database will be used for reading data from a file and storing them.
@@ -33,3 +29,5 @@ In a task we are given 3 types of plants Puffs, Parabush and Deltatree. For thos
 6) NextDayRadiation method compare nutrients needed for alpha and delta (based on a condition given in a task) to choose what kind of radiation will affect for a next day. This method returns object type of radiation.
 7) Simulation method simulate n days of radiation for plants and print out the result of each day nutrients changes and if the plant still alive.
 
+# Application:
+Run the program and the program is asked for name of a file:
