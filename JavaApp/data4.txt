@@ -1,0 +1,4 @@
+2
+Puffer p 5
+Tree d 6
+1
